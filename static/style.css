@@ -1,0 +1,83 @@
+/*
+
+gainsboro: #e0d8de; (almost white)
+oxford-blue: #0a122a (pleasantly blue);
+maximum-green: #698f3f (<- it iiz what it iiz);
+mustard: #ffd447;
+amethyst: #8963ba;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@100,200;150,464&display=swap');
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: url('./img/pattern.png');
+  font-family: 'Inconsolata 200', Tahoma, Verdana, sans-serif;
+}
+.contact_marker,
+a {
+  background-color: transparent;
+  font-family: 'Inconsolata 100', Tahoma, Verdana, sans-serif;
+  color: #ffd447;
+  text-decoration: none;
+}
+.contact_marker:hover {
+  cursor: pointer;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: 'Inconsolata 464', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0.67em 0;
+  color: #ffd447;
+}
+p {
+  color: #e0d8de;
+}
+.__main {
+  background: url('./img/1.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* Grid styles */
+  padding: 0rem 4rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+  min-height: 100vh;
+}
+
+.__contact {
+  padding: 1rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  scroll-snap-stop: always;
+}
+.__social-link:first-child {
+  margin-left: 25vw;
+}
+.__social-link:last-child {
+  margin-right: 25vw;
+}
+.__social-icon {
+  max-height: 50px;
+}
