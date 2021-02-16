@@ -1,15 +1,11 @@
 function sts() {
-  const df = document.body.scrollHeight + 100;
+  const df = document.body.scrollHeight + 120;
   const ts = df / 5;
   if (window.scrollY < document.body.scrollHeight) {
     try {
-      scr(ts);
-    } catch {}
+      window.scrollTo(0, document.body.scrollHeight);
+    } catch (error) {}
   }
-}
-function scr(sc) {
-  window.scrollTo(0, sc);
-  if (window.scrollY < document.body.scrollHeight) sts();
 }
 
 const cs = document.querySelectorAll('.contact_marker');
@@ -18,7 +14,7 @@ const t = document.getElementById('__contact');
 u.addEventListener(
   'click',
   function () {
-    window.scrollTo(0, 0);
+    window.scrollTo(0, 1);
   },
   false
 );
